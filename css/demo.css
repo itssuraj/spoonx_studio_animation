@@ -55,8 +55,9 @@ h2 {
 }
 
 .content__title {
-	font-size: 8vw;
+	font-size: 6vw;
 	line-height: 1.2;
+	letter-spacing: 0.0625em;
 	padding: 0 5vw;
 }
 
