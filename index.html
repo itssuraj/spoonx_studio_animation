@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/revealer.css" />
+		<link rel="stylesheet" type="text/css" href="css/pater.css" />
+		<script>document.documentElement.className = 'js';</script>
+	</head>
+	<body class="demo-overview">
+		<main>
+			<section class="content content--full flexy intro">
+				<h2 class="content__title content__title--center">
+					<div id="rev-1" class="content__title__inner studio_spoon">SPOONX <span class="studio_span">STUDIO</span></div><br/>
+				</h2>
+			</section>
+		</main>
+		<script src="js/anime.min.js"></script>
+		<script src="js/scrollMonitor.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+		(function() {
+			// Fake loading.
+			setTimeout(init, 1000);
+
+			function init() {
+				document.body.classList.remove('loading');
+
+				//************************ Example 1 - reveal on load ********************************
+				var rev1 = new RevealFx(document.querySelector('#rev-1'), {
+					revealSettings : {
+						bgcolor: '#23252A',
+						onCover: function(contentEl, revealerEl) {
+							contentEl.style.opacity = 1;
+						}
+					}
+				});
+				rev1.reveal();
+			}
+		})();
+		</script>
+	</body>
+</html>
