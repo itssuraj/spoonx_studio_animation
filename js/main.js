@@ -42,7 +42,9 @@
 			// Revealer´s background color.
 			bgcolor: '#f0f0f0',
 			// Animation speed. This is the speed to "cover" and also "uncover" the element (seperately, not the total time).
-			duration: 500,
+			duration: 800,
+
+			delay: 400,
 			// Animation easing. This is the easing to "cover" and also "uncover" the element.
 			easing: 'easeInOutQuint',
 			// percentage-based value representing how much of the area should be left covered.
@@ -138,9 +140,9 @@
 		
 		// Set the revealer element´s transform and transform origin.
 		var defaults = { // In case revealSettings is incomplete, its properties deafault to:
-				duration: 500,
+				duration: 800,
 				easing: 'easeInOutQuint',
-				delay: 0,
+				delay: 400,
 				bgcolor: '#f0f0f0',
 				direction: 'lr',
 				coverArea: 0
